@@ -16,12 +16,8 @@ system("clear");
      | |  __/  | |_| | | (_| | (_|  __/ |
      |_|_|      \__|_|  \__,_|\___\___|_|
 
+    Raghav Jindal, Amruth Kiran
 
-   \033[01;37m}\033[01;31m----------------------------------------\033[01;37m{
-}\033[01;31m--------------- \033[01;32mIP Information\033[01;31m ---------------\033[01;37m{
-   }\033[01;31m----------------------------------------\033[01;37m{
-
-\033[00m
 EOL;
 
 if($data['status'] == 'success') {
@@ -42,9 +38,7 @@ echo "\n ".$FCL."Longtitude    ".$MCL."   ".$data['lon'];
 echo "\n ".$FCL."Location      ".$MCL."   ".$data['lat'].",".$data['lon'];
 echo "\n\n$NCL";
 } else {
-  echo "\n\033[01;31m Sorry unable to track your\033[01;33m IP Address\033[01;31m !!!\033[00m\n";
-  echo "\033[01;31m Check your \033[01;33mNetwork connection\033[01;31m !!\033[00m\n";
-  echo "\033[01;31m If you are \033[01;33mOnline\033[01;31m then check your \033[01;33mIP Address\033[01;31m !!\033[00m\n\n";
+  echo "\n\033[01;31m Couldnt track\033[01;33m IP Address\033[01;31m !!!\033[00m\n";
 }
 }
 tracm();
